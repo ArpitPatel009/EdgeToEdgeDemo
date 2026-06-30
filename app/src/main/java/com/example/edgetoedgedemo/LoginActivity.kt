@@ -2,10 +2,15 @@ package com.example.edgetoedgedemo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat.enableEdgeToEdge
+import androidx.fragment.app.commit
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Must be called before super.onCreate() to properly transition from splash theme
+        installSplashScreen()
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge(window)
         setContentView(R.layout.activity_login)
