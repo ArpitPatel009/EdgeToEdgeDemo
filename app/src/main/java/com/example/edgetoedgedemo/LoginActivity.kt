@@ -17,14 +17,18 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge(window)
         setContentView(R.layout.activity_login)
+        setupEdgeToEdge()
+
+        supportFragmentManager.commit {
+            replace(R.id.loginFragment, SecureLoginFragment(), CIAM_FRAGMENT_TAG)
+        }
+    }
+
+    private fun setupEdgeToEdge() {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.loginScrollView)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }
-
-        supportFragmentManager.commit {
-            replace(R.id.loginFragment, SecureLoginFragment(), CIAM_FRAGMENT_TAG)
         }
     }
 
