@@ -27,6 +27,14 @@
             android:layout_height="match_parent"
             android:background="@drawable/gradient_header_overlay" />
 
+        <!-- Thick line at the end of status bar area -->
+        <View
+            android:id="@+id/statusBarLine"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="top"
+            android:background="#FFFF00" />
+
         <!-- Title text overlaying the header -->
         <TextView
             android:id="@+id/welcomeTitle"
@@ -334,6 +342,7 @@
         android:background="?attr/colorSurface"
         android:gravity="center"
         android:orientation="vertical"
+        android:backgroundTint="@color/color_secondary"
         android:paddingTop="32dp"
         android:paddingBottom="48dp">
 
@@ -377,6 +386,14 @@
             android:text="@string/app_version"
             android:textAppearance="?attr/textAppearanceCaption"
             android:textColor="@color/color_on_surface_variant" />
+
+        <!-- Thick line at the start of navigation bar area -->
+        <View
+            android:id="@+id/navigationBarLine"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFF00" />
 
     </LinearLayout>
 
