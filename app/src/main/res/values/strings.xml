@@ -11,4 +11,19 @@
     <string name="biometric">Biometric</string>
     <string name="dont_have_account">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
+
+    <!-- Features section -->
+    <string name="why_choose_us">Why Choose Us</string>
+    <string name="secure_banking">Secure Banking</string>
+    <string name="secure_banking_desc">Your data is protected with bank-level 256-bit encryption and biometric authentication.</string>
+    <string name="fast_transfers">Fast Transfers</string>
+    <string name="fast_transfers_desc">Send money instantly to anyone, anywhere in the world with zero fees.</string>
+    <string name="support_24_7">24/7 Support</string>
+    <string name="support_24_7_desc">Our dedicated support team is available around the clock to help you.</string>
+    <string name="global_access">Global Access</string>
+    <string name="global_access_desc">Access your account from anywhere with our secure mobile and web apps.</string>
+
+    <!-- Footer -->
+    <string name="terms_notice">By signing in, you agree to our Terms of Service and Privacy Policy. Your data is secure and protected.</string>
+    <string name="app_version">Version 1.0.0</string>
 </resources>
