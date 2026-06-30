@@ -25,27 +25,7 @@ class SecureLoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        setupEdgeToEdgeInsets(view)
         setupClickListeners(view)
-    }
-
-    private fun setupEdgeToEdgeInsets(view: View) {
-        val welcomeTitle = view.findViewById<TextView>(R.id.welcomeTitle)
-        val bottomSection = view.findViewById<LinearLayout>(R.id.bottomSection)
-
-        // Apply window insets for edge-to-edge display
-        ViewCompat.setOnApplyWindowInsetsListener(view) { _, windowInsets ->
-            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
-
-            // Adjust the welcome title to account for status bar
-            welcomeTitle.updatePadding(top = insets.top)
-
-            // Adjust the bottom section to account for navigation bar
-            bottomSection.updatePadding(bottom = insets.bottom + 16)
-
-            // Return CONSUMED to indicate we've handled the insets
-            WindowInsetsCompat.CONSUMED
-        }
     }
 
     private fun setupClickListeners(view: View) {
