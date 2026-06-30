@@ -6,4 +6,95 @@
     </style>
 
     <style name="Theme.EdgeToEdgeDemo" parent="Base.Theme.EdgeToEdgeDemo" />
+
+    <style name="BankTheme.Splash" parent="Theme.SplashScreen.IconBackground">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/ic_launcher_background</item>
+        <item name="postSplashScreenTheme">@style/BankTheme.DayNight</item>
+    </style>
+
+
+    <!--Top level DayNight theme to be used in AndroidManifest.xml-->
+    <style name="BankTheme.DayNight" parent="Base.BankTheme" />
+
+    <!--Base custom theme which will be shared between both light and dark theme variants-->
+    <style name="Base.BankTheme" parent="Base.ParentTheme">
+        <!--Material color attributes -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary</item>
+
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorError">@color/color_error</item>
+
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorOnError">@color/color_on_error</item>
+
+        <!--Material type attributes-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.BankTheme.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.BankTheme.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.BankTheme.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.BankTheme.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.BankTheme.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.BankTheme.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.BankTheme.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.BankTheme.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.BankTheme.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.BankTheme.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.BankTheme.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.BankTheme.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.BankTheme.Overline</item>
+
+        <!--Material shape attributes
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent</item>
+        -->
+
+        <!--Component styles
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.MyTheme.BottomSheetDialog</item>
+        <item name="navigationViewStyle">@style/Widget.MyTheme.NavigationView</item>
+        -->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog</item>
+        <item name="toolbarStyle">@style/Toolbar</item>
+        <item name="actionBarStyle">@style/Toolbar</item>
+        <item name="chipStyle">@style/BankTheme.Chip.Outline</item>
+        <item name="android:buttonStyleToggle">@style/BankTheme.Button.Toggle</item>
+    </style>
+
+    <style name="Base.ParentTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!--
+        opting out of Edge-to-Edge enforcement
+        This can be remove once we target API level 36 (Android 16) and above
+        https://developer.android.com/about/versions/13/behavior-changes-13#edge-to-edge-opt-out
+        -->
+        <!--        <item name="android:windowOptOutEdgeToEdgeEnforcement" tools:targetApi="35">false</item>-->
+
+        <!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+        <!--        <item name="android:navigationBarColor">@android:color/transparent</item>-->
+        <!--        <item name="android:windowLightStatusBar">@bool/use_light_system_bars</item>-->
+        <!--        <item name="android:windowDrawsSystemBarBackgrounds">true</item> &lt;!&ndash; Required for statusBarColor &ndash;&gt;-->
+        <!--        <item name="android:windowTranslucentStatus">true</item>-->
+
+        <!--        <item name="android:navigationBarColor">@color/system_ui_nav_bar</item>-->
+        <!--        <item name="android:windowLightNavigationBar">@bool/use_light_system_bars</item>-->
+        <!--        <item name="android:navigationBarDividerColor">?attr/colorControlHighlight</item>-->
+
+        <!--Remap legacy AppCompat attributes to MaterialComponent attributes-->
+        <item name="colorPrimaryDark">?colorPrimaryVariant</item>
+        <item name="colorAccent">?colorSecondary</item>
+
+        <!--    App-wide text change    -->
+        <item name="android:textColorPrimary">@color/color_on_background</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/btn_compound_text</item>
+        <item name="android:textColorSecondary">@color/color_on_surface_variant</item>
+    </style>
+
+
 </resources>

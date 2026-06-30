@@ -2,4 +2,26 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Material color palette -->
+    <color name="color_primary">#1565C0</color>
+    <color name="color_primary_variant">#0D47A1</color>
+    <color name="color_secondary">#00897B</color>
+    <color name="color_background">#FAFAFA</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_error">#B00020</color>
+
+    <!-- On colors -->
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_on_secondary">#FFFFFF</color>
+    <color name="color_on_background">#212121</color>
+    <color name="color_on_surface">#212121</color>
+    <color name="color_on_error">#FFFFFF</color>
+    <color name="color_on_surface_variant">#757575</color>
+
+    <!-- Launcher icon background -->
+    <color name="ic_launcher_background">#1565C0</color>
+
+    <!-- Button and control colors -->
+    <color name="btn_compound_text">#9E9E9E</color>
 </resources>
